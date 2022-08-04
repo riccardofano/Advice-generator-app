@@ -7,5 +7,17 @@
 @layer base {
   body {
     font-family: "Manrope", sans-serif;
+    @apply bg-blue-800;
+  }
+}
+
+@layer components {
+  .big-shadow {
+    box-shadow: 1rem 2rem 2rem rgba(0, 0, 0, 0.1);
+  }
+
+  .glow {
+    @apply shadow-neon;
+    box-shadow: 0 0 2rem var(--tw-shadow-color);
   }
 }
